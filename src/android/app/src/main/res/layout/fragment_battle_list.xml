@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:targetApi="21"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boardgameActivity_search"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSearch"
+        android:textSize="16sp"
+        android:hint="@string/battleActivity_gameName"
+        android:textColor="@color/secondary_text"
+        android:layout_alignBaseline="@+id/tvSearch" />
+
+    <TextView
+        android:id="@+id/tvGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner"
+        android:layout_below="@+id/tvSearch"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginRight="5dp"
+        android:text="@string/battleActivity_game" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearch"
+        android:layout_alignBaseline="@+id/rvCreate"
+        android:layout_toRightOf="@+id/tvGame"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivReload"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvSearch"
+        android:layout_toLeftOf="@+id/rvCreate"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_refresh" />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rvCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearch"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tvCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/drawerArrowColor"
+            android:textSize="16sp"
+            android:text="@string/battleActivity_create" />
+    </com.andexert.library.RippleView>
+
+    <RelativeLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvCreate" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvBattle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinner"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:text="@string/battleActivity_name" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTitle"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/spinnerGameName"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/battleActivity_game" />
+
+                        <Spinner
+                            android:id="@+id/spinnerGameName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTitle"
+                            android:layout_toRightOf="@+id/tvName"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp" />
+
+                        <TextView
+                            android:id="@+id/tvTimeWarning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spinnerGameName"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10sp"
+                            android:text="@string/battleActivity_openTime" />
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTimeWarning"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/tvDateValue"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/battleActivity_date" />
+
+                        <TextView
+                            android:id="@+id/tvDateValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTimeWarning"
+                            android:layout_toRightOf="@+id/tvDate"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/battleActivity_dateSelect" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDate"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/tvTimeValueFrom"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/battleActivity_time" />
+
+                        <TextView
+                            android:id="@+id/tvTimeValueFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDateValue"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/battleActivity_timeSelect"/>
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTime"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/tvNumOfDuration"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/battleActivity_duration" />
+
+                        <TextView
+                            android:id="@+id/tvNumOfDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTimeValueFrom"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_alignBaseline="@+id/sbDuration"
+                            android:layout_marginTop="20dp" />
+
+                        <SeekBar
+                            android:id="@+id/sbDuration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTime"
+                            android:layout_toRightOf="@+id/tvNumOfPeople"
+                            android:layout_marginTop="10dp"
+                            android:max="4" />
+
+                        <TextView
+                            android:id="@+id/tvPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDuration"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/spinner_place"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/battleActivity_place" />
+
+                        <Spinner
+                            android:id="@+id/spinner_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDuration"
+                            android:layout_toRightOf="@+id/tvPlace"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvPeople"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPlace"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/tvNumOfPeople"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/battleActivity_requirement" />
+
+                        <TextView
+                            android:id="@+id/tvNumOfPeople"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPlace"
+                            android:layout_alignLeft="@+id/spinnerGameName"
+                            android:layout_alignBaseline="@+id/sbNumPeople"
+                            android:layout_marginTop="20dp" />
+
+                        <SeekBar
+                            android:id="@+id/sbNumPeople"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPlace"
+                            android:layout_toRightOf="@+id/tvNumOfPeople"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvTel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPeople"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignBaseline="@+id/tvTelMessage"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/battleActivity_tel" />
+
+                        <EditText
+                            android:id="@+id/etTel"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPeople"
+                            android:layout_toRightOf="@+id/tvTel"
+                            android:layout_alignBaseline="@+id/tvTelMessage"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/secondary_text"
+                            android:textAlignment="center"
+                            android:inputType="number"
+                            android:maxLength="8" />
+
+                        <TextView
+                            android:id="@+id/tvTelMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPeople"
+                            android:layout_toRightOf="@+id/etTel"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/battleActivity_tel_message" />
+
+                        <TextView
+                            android:id="@+id/tvCreatePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTel"
+                            android:layout_marginTop="20dp"
+                            android:textSize="10dp"
+                            android:textColor="@color/messageBox_text"/>
+
+                        <com.andexert.library.RippleView
+                            android:id="@+id/ripple_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvCreatePrice">
+
+                            <TextView
+                                android:id="@+id/tvBook"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvCreatePrice"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:background="@color/colorAccent"
+                                android:textColor="@color/drawerArrowColor"
+                                android:textSize="16sp"
+                                android:text="@string/eventActivity_book" />
+                        </com.andexert.library.RippleView>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:src="@drawable/ic_cross" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relative_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="@string/battleActivity_requirement" />
+
+                    <EditText
+                        android:id="@+id/etNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:inputType="number"
+                        android:maxLength="3" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:textColor="@color/messageBox_text"/>
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/rvOK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvOK"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/drawerArrowColor"
+                            android:textSize="16sp"
+                            android:text="@string/battleActivity_ok" />
+                    </com.andexert.library.RippleView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ivClose2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:src="@drawable/ic_cross" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

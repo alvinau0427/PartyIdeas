@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvBattleGameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/battleActivity_name" />
+
+    <ImageView
+        android:id="@+id/ivDateLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvBattleGameName"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_date" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBattleGameName"
+        android:layout_toRightOf="@+id/ivDateLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_date" />
+
+    <ImageView
+        android:id="@+id/ivTimeLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_time" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_toRightOf="@+id/ivTimeLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_time" />
+
+    <ImageView
+        android:id="@+id/ivPlaceLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvTime"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_location" />
+
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTime"
+        android:layout_toRightOf="@+id/ivPlaceLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_place" />
+
+    <ImageView
+        android:id="@+id/ivHostLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvPlace"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_host" />
+
+    <TextView
+        android:id="@+id/tvHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPlace"
+        android:layout_toRightOf="@+id/ivHostLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_roomHoster" />
+
+    <ImageView
+        android:id="@+id/ivRequirementLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvHost"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_requirement" />
+
+    <TextView
+        android:id="@+id/tvRequirement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHost"
+        android:layout_toRightOf="@+id/ivRequirementLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_requirement" />
+
+    <ImageView
+        android:id="@+id/ivParticipantLogo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/tvRequirement"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_battle_participant" />
+
+    <TextView
+        android:id="@+id/tvParticipant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRequirement"
+        android:layout_toRightOf="@+id/ivParticipantLogo"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_participant" />
+
+    <TextView
+        android:id="@+id/tvParticipantValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRequirement"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tvParticipant"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="@string/battleActivity_participant" />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rvBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvParticipantValue"
+        android:layout_marginTop="10dp"
+        android:background="@color/wait_back" >
+
+        <TextView
+            android:id="@+id/tvBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/wait_text"
+            android:textSize="16sp"
+            android:text="@string/battleActivity_book" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rvFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvParticipantValue"
+        android:layout_marginTop="10dp"
+        android:background="@color/full_back">
+
+        <TextView
+            android:id="@+id/tvFull"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/full_text"
+            android:textSize="16sp"
+            android:text="@string/battleActivity_full" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rvCancelled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvParticipantValue"
+        android:layout_marginTop="10dp"
+        android:background="@color/cancel_back">
+
+        <TextView
+            android:id="@+id/tvCancelled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/cancel_text"
+            android:textSize="16sp"
+            android:text="@string/battleActivity_cancelled" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rvConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvParticipantValue"
+        android:layout_marginTop="10dp"
+        android:background="@color/confirmed_back">
+
+        <TextView
+            android:id="@+id/tvConfirmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/confirmed_text"
+            android:textSize="16sp"
+            android:text="@string/battleActivity_confirmed" />
+    </com.andexert.library.RippleView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rvBook"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

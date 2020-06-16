@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp">
+
+            <ImageView
+                android:id="@+id/ivBattlePhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tvBattleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivBattlePhoto"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/ivBattlePhoto"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp"
+                android:maxLines="2" />
+
+            <ImageView
+                android:id="@+id/ivPeopleLogo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignLeft="@id/tvBattleTitle"
+                android:layout_below="@+id/tvBattleTitle"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_battle_requirement" />
+
+            <TextView
+                android:id="@+id/tvBattlePeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivPeopleLogo"
+                android:layout_below="@+id/tvBattleTitle"
+                android:layout_marginRight="10dp"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivDateLogo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tvBattlePeople"
+                android:layout_below="@id/tvBattleTitle"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_battle_date" />
+
+            <TextView
+                android:id="@+id/tvBattleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivDateLogo"
+                android:layout_below="@+id/tvBattleTitle"
+                android:layout_marginRight="10dp"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivHostLogo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tvBattleDate"
+                android:layout_below="@+id/tvBattleTitle"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_battle_host" />
+
+            <TextView
+                android:id="@+id/tvBattleHoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivHostLogo"
+                android:layout_below="@id/tvBattleTitle"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:maxLines="1"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdgeLength="0dp"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".IndexFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/indexActivity_event_title" />
+
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/mRollViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/tvEventTitle"
+            android:layout_marginBottom="5dp"
+            app:rollviewpager_play_delay="2500"
+            app:rollviewpager_hint_gravity="center"
+            app:rollviewpager_hint_color="@color/hints_text"
+            app:rollviewpager_hint_alpha="80"
+            app:rollviewpager_hint_paddingLeft="0dp"
+            app:rollviewpager_hint_paddingRight="0dp"
+            app:rollviewpager_hint_paddingTop="0dp"
+            app:rollviewpager_hint_paddingBottom="0dp" />
+
+        <TextView
+            android:id="@+id/tvBattleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mRollViewPager"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/indexActivity_battle_title" />
+
+        <RelativeLayout
+            android:id="@+id/battleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBattleTitle">
+
+            <com.partyideas.partyideas.NonScrollListView
+                android:id="@+id/lvBattleList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+
+            <include
+                android:id="@+id/battleNoData"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                layout="@layout/layout"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvGameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/battleLayout"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/indexActivity_game_title" />
+
+        <RelativeLayout
+            android:id="@+id/gameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGameTitle">
+
+            <com.partyideas.partyideas.NonScrollGridView
+                android:id="@+id/gvGameList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="auto_fit"
+                android:columnWidth="100dp"
+                android:stretchMode="columnWidth"
+                android:layout_marginBottom="5dp" />
+
+            <include
+                android:id="@+id/gameNoData"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                layout="@layout/layout"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/gameLayout"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/indexcontact1" />
+
+    </RelativeLayout>
+
+</ScrollView>

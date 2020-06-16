@@ -1,0 +1,256 @@
+<resources>
+    <!-- Basic Settings -->
+    <string name="app_name">PartyIdeas</string>
+    <string name="description">PartyIdeas Application</string>
+    <string name="logo">PartyIdeas HK ®</string>
+    <string name="version">version: 0.0.1</string>
+    <string name="settings">設定</string>
+    <string name="exitMessage">確定要離開?</string>
+    <string name="loginMessage_yes">是</string>
+    <string name="loginMessage_no">否</string>
+    <string name="loginMessage">成功登入系統</string>
+    <string name="loginMessage_Failed">尚未登入系統</string>
+    <string name="loginFailedMessage">已經登入系統</string>
+    <string name="logoutMessage">成功登出系統</string>
+    <string name="logoutConfirmMessage">確定要登出系統?</string>
+    <string name="logoutWarning">請先登入系統</string>
+    <string name="connect_failed_message">連接伺服器失敗! 請重新連接</string>
+    <string name="loading">連接中...</string>
+
+    <!-- Crash Program Page -->
+    <string name="customactivityoncrash_error_activity_error_occurred_explanation">應用程式發生意外的錯誤.\n為閣下帶來不便之處, 敬請原諒.</string>
+    <string name="customactivityoncrash_error_activity_unknown_exception">未知異常問題</string>
+    <string name="customactivityoncrash_error_activity_restart_app">重新啟動應用程序</string>
+    <string name="customactivityoncrash_error_activity_close_app">關閉應用程序</string>
+    <string name="customactivityoncrash_error_activity_error_details">錯誤詳情</string>
+    <string name="customactivityoncrash_error_activity_error_details_title">錯誤的詳細信息列表:</string>
+    <string name="customactivityoncrash_error_activity_error_details_close">關閉</string>
+    <string name="customactivityoncrash_error_activity_error_details_copy">複製到剪貼板</string>
+    <string name="customactivityoncrash_error_activity_error_details_copied">已複製到剪貼板</string>
+    <string name="customactivityoncrash_error_activity_error_details_clipboard_label">錯誤信息</string>
+
+    <!-- Action Bar -->
+    <string name="actionbar_profile">修改用戶資料</string>
+    <string name="actionbar_settings">更改系統設定</string>
+    <string name="actionbar_notification">查看以往通知</string>
+    <string name="actionbar_profile_title">用戶資料</string>
+    <string name="actionbar_settings_title">系統設定</string>
+    <string name="actionbar_notification_setting_title">設定訊息</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_name">PartyIdeas Account</string>
+    <string name="navigation_email">partyideas@android.com</string>
+    <string name="navigation_item_title">選項清單</string>
+    <string name="navigation_index">首頁</string>
+    <string name="navigation_calendar">活動日曆</string>
+    <string name="navigation_event">活動概覽</string>
+    <string name="navigation_booking">私人包場</string>
+    <string name="navigation_boardgame">桌遊買賣</string>
+    <string name="navigation_battle">網上約戰</string>
+    <string name="navigation_logIn">登入系統</string>
+    <string name="navigation_google">以 Google 帳號登入</string>
+    <string name="navigation_facebook">以 Facebook 帳號登入</string>
+    <string name="navigation_notification">設定系統通知訊息</string>
+    <string name="navigation_logOut">登出系統</string>
+
+    <!-- Index Activity -->
+    <string name="indexActivity_event_title">最新活動消息</string>
+    <string name="indexActivity_game_title">最新桌遊買賣</string>
+    <string name="indexActivity_battle_title">最新約戰募集</string>
+    <string name="indexActivity_contact">聯絡我們</string>
+    <string name="indexActivity_contact_message1">電話: 60890244</string>
+    <string name="indexActivity_contact_message2">電郵: info@partyideas.hk</string>
+    <string name="indexActivity_contact_message3">地址: 旺角道13號藝旺商業大廈14A (13樓出lift轉右再上一層)</string>
+    <string name="indexActivity_contact_message4">營業時間: \n一至五 3:00pm - 11:00pm\n六至日 2:00pm - 1:00am</string>
+    <string name="indexActivity_nodata">暫時未有</string>
+
+    <!-- Event Activity -->
+    <string name="eventActivity_name">活動名稱</string>
+    <string name="eventActivity_detail">活動詳情</string>
+    <string name="eventActivity_more">更多詳情</string>
+    <string name="eventActivity_time">時間:</string>
+    <string name="eventActivity_book">預約</string>
+    <string name="eventActivity_noEvent_message">沒有任何活動更新</string>
+
+    <!-- BoardGame Activity -->
+    <string name="boardgameActivity_information">桌遊資訊</string>
+    <string name="boardgameActivity_price">價錢:</string>
+    <string name="boardgameActivity_dollarSign">HK$</string>
+    <string name="boardgameActivity_quantity">貨存量:</string>
+    <string name="boardgameActivity_gameType">貨品類型:</string>
+    <string name="boardgameActivity_year">發售年份:</string>
+    <string name="boardgameActivity_players">玩家數目:</string>
+    <string name="boardgameActivity_limitation">限制年齡:</string>
+    <string name="boardgameActivity_description">遊戲介紹</string>
+    <string name="boardgameActivity_addToCart">預訂該桌上遊戲</string>
+    <string name="boardgameActivity_name">姓名:</string>
+    <string name="boardgameActivity_nameHints">請輸入你的名字</string>
+    <string name="boardgameActivity_num">數量:</string>
+    <string name="boardgameActivity_quantityHints">請輸入購買數量</string>
+    <string name="boardgameActivity_tel">電話號碼: (聯絡用途)</string>
+    <string name="boardgameActivity_telHints">請輸入電話號碼</string>
+    <string name="boardgameActivity_telError">請輸入一個香港區號格式的電話號碼</string>
+    <string name="boardgameActivity_booked">預訂完成</string>
+    <string name="boardgameActivity_bookFailed">預訂不成功, 請確保所有資料正確無誤</string>
+    <string name="boardgameActivity_quantitymessage">提交訂單前，請確認貨品的存貨量。\n如貨存不足，可提交訂單作預訂，約14個工作天到貨。\n\n我們會有專人聯絡你關於訂單付款和取貨事宜。</string>
+    <string name="boardgameActivity_type">類別</string>
+    <string name="boardgameActivity_ok">確定</string>
+    <string name="boardgameActivity_close">取消</string>
+    <string name="boardgameActivity_search">搜尋:</string>
+    <string name="boardgameActivity_filterMessage">沒有任何適合這個類別的桌遊</string>
+
+    <!-- Battle Activity -->
+    <string name="battleActivity_all">所有</string>
+    <string name="battleActivity_game">遊戲:</string>
+    <string name="battleActivity_gameName">遊戲名稱</string>
+    <string name="battleActivity_create">十</string>
+    <string name="battleActivity_name">約戰房間</string>
+    <string name="battleActivity_roomHoster">房主:</string>
+    <string name="battleActivity_date">日期:</string>
+    <string name="battleActivity_time">時間:</string>
+    <string name="battleActivity_duration">時數:</string>
+    <string name="battleActivity_place">地點:</string>
+    <string name="battleActivity_requirement">人數:</string>
+    <string name="battleActivity_participant">參加者:</string>
+    <string name="battleActivity_book">參加</string>
+    <string name="battleActivity_full">額滿</string>
+    <string name="battleActivity_confirmed">已確實</string>
+    <string name="battleActivity_cancelled">取消</string>
+    <string name="battleActivity_successful">訊息: 參加成功</string>
+    <string name="battleActivity_failed">已參加, 請更新頁面</string>
+    <string name="battleActivity_hoster">你是房主, 不能參加</string>
+    <string name="battleActivity_blacklisted">抱歉, 此帳號功能已被系統管理員凍結</string>
+    <string name="battleActivity_cancellSuccessfully">取消成功</string>
+    <string name="battleActivity_cancellFailed">已取消, 請更新頁面</string>
+    <string name="battleActivity_noBattle_message">沒有任何約戰記錄資料</string>
+    <string name="battleActivity_dateSelect">請選擇日期</string>
+    <string name="battleActivity_timeSelect">請選擇時間</string>
+    <string name="battleActivity_to">至</string>
+    <string name="battleActivity_dateSelectFailed">請先選擇日期</string>
+    <string name="battleActivity_timeSelectFailed">請先選擇時間</string>
+    <string name="battleActivity_durationSelectFailed">請先選擇時數</string>
+    <string name="battleActivity_tel">電話:</string>
+    <string name="battleActivity_tel_message">(聯絡用途)</string>
+    <string name="battleActivity_cancel">取消</string>
+    <string name="battleActivity_openTime">開放時間:</string>
+    <string name="battleActivity_weekday">一至五:</string>
+    <string name="battleActivity_weekend">六至日:</string>
+    <string name="battleActivity_openSuccessfully">完成</string>
+    <string name="battleActivity_openFailed">你已在當日創建了一間房間</string>
+    <string name="battleActivity_openFailed2Room">你已創建了兩間房間</string>
+    <string name="battleActivity_confirmMessage">請檢查所有已輸入的資料是否正確</string>
+    <string name="battleActivity_moreThanRemainderMessage">參加人數已超出上限</string>
+    <string name="battleActivity_ok">確定</string>
+    <string name="battleActivity_warnning">警告</string>
+    <string name="battleActivity_warnningMessage">確定要移除一個已公開的活動?</string>
+    <string name="battleActivity_overOpeningHours">已超過了開放時間</string>
+    <string name="battleActivity_lessThanGameLimit">人數少於該遊戲限制</string>
+    <string name="battleActivity_telError">請輸入一個香港區號格式的電話號碼</string>
+    <string name="battleActivity_BookDate">請選擇明天或以後作為約戰日期</string>
+    <string name="battleActivity_Price">*參加費: HK$</string>
+    <string name="battleActivity_Time">**時間以半小時為單位</string>
+
+    <!-- Facebook Activity -->
+    <string name="facebookActivity_app_id">1751077158504743</string>
+
+    <!-- Google Server -->
+    <string name="server_client_id">826775288727-e6oc0fvu5u9oumu00e807h9egvan6bqu.apps.googleusercontent.com</string>
+
+    <!-- Message Activity -->
+    <string name="messageActivity_head"><u>設置同步通知信息</u></string>
+    <string name="messageActivity_subhead">顯示彈出消息給應用程式用戶</string>
+    <string name="messageActivity_hint_title">標題</string>
+    <string name="messageActivity_hint_message">信息</string>
+    <string name="messageActivity_success">成功發表信息</string>
+    <string name="messageActivity_titleName">【PartyIdeas】</string>
+    <string name="messageActivity_title">標題:</string>
+    <string name="messageActivity_message">信息:</string>
+    <string name="messageActivity_confirmMsg">\n\n確定發表信息?</string>
+    <string name="messageActivity_msg_error">請輸入任何內容於欄位內!</string>
+    <string name="messageActivity_yes">是</string>
+    <string name="messageActivity_no">否</string>
+
+    <!-- Settings Activity -->
+    <string name="settingActivity_person">帳戶個人資料</string>
+    <string name="settingActivity_name">帳號名稱:</string>
+    <string name="settingActivity_nickname">暱稱:</string>
+    <string name="settingActivity_nicknameDescription">(系統用戶稱呼)</string>
+    <string name="settingActivity_accountType">帳號類型:</string>
+    <string name="settingActivity_accountType_value">帳號</string>
+    <string name="settingActivity_tel">聯絡電話:</string>
+    <string name="settingActivity_telDescription">(系統管理人聯絡用戶)</string>
+    <string name="settingActivity_email">電郵地址:</string>
+    <string name="settingActivity_not_define">尚未登入</string>
+    <string name="settingActivity_not_setting">尚未設定</string>
+    <string name="settingActivity_ok">確定</string>
+    <string name="settingActivity_isnotEmpty">欄位不能漏空, 請重新輸入</string>
+    <string name="settingActivity_normal">一般設定</string>
+    <string name="settingActivity_language">語言</string>
+    <string name="settingActivity_coming_soon">coming soon</string>
+    <string name="settingActivity_rating">評分</string>
+    <string name="settingActivity_rating_description">如若對本應用程式有任何意見, 歡迎至Google play store留言或評分</string>
+    <string name="settingActivity_rating_dialog_title">感謝你有評分的意欲</string>
+    <string name="settingActivity_rating_dialog_description">如有興趣了解更多, 歡迎瀏覽我們的Facebook專頁或致電5188 6361查詢.</string>
+    <string name="settingActivity_rating_dialog_intent">前住Google Play Store</string>
+    <string name="settingActivity_rating_dialog_back">稍後</string>
+    <string name="settingActivity_notification">通知設定</string>
+    <string name="settingActivity_event_notification">顯示訊息通知</string>
+
+    <!-- Layout View -->
+    <string name="view_message_more">更多資訊加載中...</string>
+    <string name="view_message_nomore">訊息: 沒有更多資訊更新</string>
+    <string name="view_message_success">訊息: 已成功更新資料</string>
+    <string name="view_message_error">警告: 網絡錯誤, 請點撃重試</string>
+    <string name="view_message_empty">警告: 暫無數據, 請重新嘗試</string>
+
+    <!-- PrivateBooking Activity -->
+    <string name="error_message_empty">請輸入你的名字</string>
+    <string name="error_message_date">請輸入日期</string>
+    <string name="error_message_dateValid">請輸入正確的日期</string>
+    <string name="error_message_time">請輸入時間</string>
+    <string name="error_message_timeValid">請輸入正確的時間</string>
+    <string name="error_message_tel">請輸入你的電話號碼</string>
+    <string name="error_message_people">請輸入包場人數, 最大容納人數為100人</string>
+    <string name="error_message_year">YYYY</string>
+    <string name="error_message_month">MM</string>
+    <string name="error_message_day">DD</string>
+    <string name="error_message_hour">00至23</string>
+    <string name="error_message_minutes">00或30</string>
+    <string name="error_message_durationSubmit">請輸入包埸時數</string>
+    <string name="privateBookingActivity_name">暱稱</string>
+    <string name="privateBookingActivity_date">日期:</string>
+    <string name="privateBookingActivity_time">時間:</string>
+    <string name="privateBookingActivity_duration">包場時數:</string>
+    <string name="privateBookingActivity_place">地點:</string>
+    <string name="privateBookingActivity_people">人數</string>
+    <string name="privateBookingActivity_tel">電話號碼</string>
+    <string name="privateBookingActivity_remark">留言 (可留空)</string>
+    <string name="privateBookingActivity_title">場地價目</string>
+    <string name="privateBookingActivity_submit">提交</string>
+    <string name="privateBookingActivity_successful">預約成功</string>
+
+    <!-- Message Box -->
+    <string name="messageBox_Close">關閉</string>
+
+    <array name="time">
+        <item>下午</item>
+        <item>上午</item>
+    </array>
+
+    <array name="languageItem">
+        <item>請選擇系統語言</item>
+        <item>中文</item>
+        <item>英文</item>
+    </array>
+
+    <array name="languageKey">
+        <item></item>
+        <item>zh</item>
+        <item>en</item>
+    </array>
+    <string name="messageBox_title">通知</string>
+    <string name="boardgameActivity_filter">貨品類型</string>
+
+</resources>

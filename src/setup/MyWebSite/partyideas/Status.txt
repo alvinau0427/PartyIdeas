@@ -1,0 +1,75 @@
+﻿blacklist
+
+0 = 黃牌(警告一次)
+
+1 = 紅牌(以後入唔到)
+
+
+
+boardgame
+
+0 = 可以買
+
+1 = 絶版
+
+
+
+boardgamebooking
+
+0 = 等待審批
+
+1 = Admin接受左
+
+2 = Admin拒絕左
+
+3 = 成功交收埋
+
+4 = 交收失敗
+
+
+
+gatheringbattle
+
+-1 = 等待人入
+
+0 = 等待審批
+
+1 = Admin接受左
+
+2 = Admin拒絕左
+
+3 = 活動成功
+
+4 = 活動取消
+
+
+
+photo
+
+0 = 不顯示
+
+1 = 顯示在首頁(數量不限)
+
+2 = 顯示在privatebooking page (最多只可以1張, 不可以冇)
+
+
+
+privatebooking
+
+0 = 等待審批
+
+1 = Admin接受左
+
+2 = Admin拒絕左
+
+3 = 活動成功
+
+4 = 活動取消
+
+
+
+ReceiveNotification
+
+0 = 接收
+
+1 = 不接受

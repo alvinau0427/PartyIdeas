@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/navigation_item_title">
+            <menu>
+                <item
+                    android:id="@+id/nav_index"
+                    android:icon="@drawable/ic_nav_home_list"
+                    android:title="@string/navigation_index" />
+                <item
+                    android:id="@+id/nav_calendar"
+                    android:icon="@drawable/ic_nav_timetable_list"
+                    android:title="@string/navigation_calendar" />
+                <item
+                    android:id="@+id/nav_event"
+                    android:icon="@drawable/ic_nav_event_list"
+                    android:title="@string/navigation_event" />
+                <item
+                    android:id="@+id/nav_booking"
+                    android:icon="@drawable/ic_nav_private_list"
+                    android:title="@string/navigation_booking" />
+                <item
+                    android:id="@+id/nav_boardgame"
+                    android:icon="@drawable/ic_nav_purchasing"
+                    android:title="@string/navigation_boardgame" />
+                <item
+                    android:id="@+id/nav_battle"
+                    android:icon="@drawable/ic_nav_battle_list"
+                    android:title="@string/navigation_battle" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/navigation_logIn">
+            <menu>
+                <item
+                    android:id="@+id/nav_google"
+                    android:icon="@drawable/ic_nav_google"
+                    android:title="@string/navigation_google" />
+                <item
+                    android:id="@+id/nav_facebook"
+                    android:icon="@drawable/ic_nav_facebook"
+                    android:title="@string/navigation_facebook" />
+                <item
+                    android:id="@+id/nav_notification"
+                    android:icon="@drawable/ic_nav_notification"
+                    android:title="@string/navigation_notification" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/navigation_logOut">
+            <menu>
+                <item
+                    android:id="@+id/nav_logOut"
+                    android:icon="@drawable/ic_nav_exit"
+                    android:title="@string/navigation_logOut" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.partyideas.partyideas"
+        minSdkVersion 16
+        targetSdkVersion 24
+        maxSdkVersion 24
+        versionCode 2
+        versionName "1.2"
+    }
+
+    buildTypes {
+        debug {
+            debuggable false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def apk = output.outputFile;
+                def newName = "Partyideas-0.0.1.apk";
+                output.outputFile = new File(apk.parentFile, newName);
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/volley.jar')
+    compile files('libs/KGJsonConverter.jar')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:palette-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'com.google.android.gms:play-services-plus:9.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    compile 'com.github.clans:fab:1.6.0'
+    compile 'com.github.amigold.fundapter:library:1.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.github.sundeepk:compact-calendar-view:1.8.9'
+    compile 'com.github.emanzanoaxa:RippleEffect:52ea2a0ab6'
+    compile 'com.jude:rollviewpager:1.3.4'
+    compile 'com.jude:easyrecyclerview:4.0.6'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.1'
+    compile 'jp.wasabeef:glide-transformations:1.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'net.xpece.android:support-preference:1.0.2'
+    compile 'com.emmasuzuki:easyform:1.0.1'
+    compile 'cat.ereza:customactivityoncrash:1.5.0'
+    compile 'com.github.javiersantos:MaterialStyledDialogs:1.5.5'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "826775288727",
+    "firebase_url": "https://psychic-yew-136023.firebaseio.com",
+    "project_id": "psychic-yew-136023",
+    "storage_bucket": "psychic-yew-136023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826775288727:android:6ec2ba702c85477c",
+        "android_client_info": {
+          "package_name": "com.partyideas.partyideas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826775288727-e6oc0fvu5u9oumu00e807h9egvan6bqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.partyideas.partyideas",
+            "certificate_hash": "6B7223C04F668219859914D980E9C57A6372FAF3"
+          }
+        },
+        {
+          "client_id": "826775288727-3cqopatiojvckgvlqpin4h3eskr70agp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "826775288727-t2kn1vi9gof9601ei9jbsu3f4d9jitu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPqIF7maqFJ7qcWQax-X4KwcMpY2F7QZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
