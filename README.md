@@ -8,7 +8,7 @@
 ## Getting Started
 - The project is an industrial attachment demo which aims for develop a CMS(Content Management System) with the Android application to the startup partroom (Party Ideas HK)
 
-### Features
+## Features
 ##### Android Application
 - Home Page: List the latest updates or news of all items, so that users can get the most information at first glance, and the inner page shows detailed information.
 - Time Schedule: Connect Meetup and Facebook for getting the event calendar and display timetable, the schedule of personal events for online battle is incorporated into the calendar.
