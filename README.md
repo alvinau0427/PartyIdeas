@@ -1,4 +1,4 @@
-# ![Logo](https://github.com/alvinau0427/PartyIdeas/blob/master/doc/img_logo.png) PartyIdeas
+# ![Logo](./demo/img_logo.png) PartyIdeas
 
 > IVE 2015/16 Industrial Attachment
 
@@ -35,7 +35,7 @@
 
 | Private Booking     | Battle Booking    | Booking Details     |
 | :-------------: | :-------------: | :-------------: |
-| ![Private Booking](./demo/img_private_booking.png) | ![Battle Booking](./demo/img_batte_1.png) | ![Booking Details](./demo/img_batte_2.png) |
+| ![Private Booking](./demo/img_private_booking.png) | ![Battle Booking](./demo/img_battle_1.png) | ![Booking Details](./demo/img_battle_2.png) |
 
 | Google Login     | Facebook Login    | Profile     |
 | :-------------: | :-------------: | :-------------: |
