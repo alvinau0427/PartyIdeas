@@ -1,28 +1,35 @@
 # ![Logo](./demo/img_logo.png) PartyIdeas
+> **IVE 2015/16 Industrial Attachment Project**
+> 
+> A comprehensive Content Management System (CMS) integrated with a dedicated Android application, developed for the startup **Party Ideas HK**.
 
-> IVE 2015/16 Industrial Attachment
+[![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)](#) &nbsp;
+[![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#) &nbsp;
+[![PHP](https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white)](#) &nbsp;
+[![JavaScript](https://img.shields.io/badge/Javacript-F9AB00?logo=javascript&logoColor=white)](#) &nbsp;
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) &nbsp;
+[![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#) &nbsp;
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) &nbsp;
 
-[![Build Status](https://travis-ci.com/alvinau0427/PartyIdeas.svg?branch=master)](https://travis-ci.org/alvinau0427/PartyIdeas)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+## Project Overview
+PartyIdeas is an industrial attachment demo designed to streamline the management of "Partrooms". It bridges the gap between administrators and users through a robust web-based CMS and a feature-rich mobile experience.
 
-## Getting Started
-- The project is an industrial attachment demo which aims for develop a CMS(Content Management System) with the Android application to the startup partroom (Party Ideas HK)
+## Key Features
+### Android Application
+* **Dynamic Home Feed:** Real-time updates and news aggregator for the latest party room events.
+* **Smart Scheduling:** Bi-directional integration with **Meetup** and **Facebook** APIs to sync event calendars and personal battle schedules.
+* **Unified Item Browser:** Advanced filtering system for board games, themed parties, private venues, and art workshops.
+* **E-commerce Integration:** Complete shopping basket functionality for board games (supports Google, Facebook, and Meetup OAuth).
+* **Game Battle System:** * Create and manage "Battle Rooms" (Time, Venue, Capacity).
+    * Real-time participation tracking and room setting modifications.
+* **Administrative Tools:** In-app push notification management for users with Admin permissions.
+* **Multi-Account Support:** Seamless profile synchronization via major social providers.
 
-## Features
-##### Android Application
-- Home Page: List the latest updates or news of all items, so that users can get the most information at first glance, and the inner page shows detailed information.
-- Time Schedule: Connect Meetup and Facebook for getting the event calendar and display timetable, the schedule of personal events for online battle is incorporated into the calendar.
-- Show Event: Due to the `board games`, `themed parties`, `private venues`, and `art workshops`, the four themes are of the same type. They can be used as the same item and filter different types of items in a filtering way, and the detailed information can be displayed on the same page.
-- Purchasing Board Games (Need to log in to Google, Facebook or Meetup account to get the actual function): Display purchasing items, detailed information on the inner page and operation in the shopping basket.
-- Board Games Battle (Need to log in to Google, Facebook or Meetup account to get the actual function): Display information about battle rooms (including time, place, people, events) and event participation operations, the inner page shows participants. (i)Opening room setting for the organizer.  (ii) Modify settings midway through the room you have opened.
-- Account Connection (Google, Facebook, Meetup): The User name and Email address of the connected account will be displayed in the hidden menu on the left. 
-- Push notification (Only set for users with Admin Permission): The latest pop-up message displayed in the database settings, users with Admin Permission can make instant settings in the app.
-
-##### Website
-- Database Management: Users with Aamin permission can add any data to the website for management purpose.
-- Blacklist: Users can be added to the blacklist for user control of mobile applications
-- Approval of event application: As a private charter, the final approval of the online engagement event.
-- Handle the purchase of a shopping basket for board games on mobile apps: users with admin permission can check the shopping basket reservation information.
+### Web CMS (Administrator Portal)
+* **Data Management:** Full CRUD operations for application content.
+* **User Control:** Integrated Blacklist system for mobile user moderation.
+* **Booking Approval:** Centralized workflow for private charter and online engagement events.
+* **Order Management:** Real-time monitoring and processing of board game reservations.
 
 ## Screenshots
 | Start Page     | Home Page    | Event     |
